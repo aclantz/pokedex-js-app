@@ -1,0 +1,27 @@
+
+body {
+  font-family: 'Noto Sans', sans-serif;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+header h1 {
+    font-size: medium;
+}
+.header__img {
+    width: 40px;
+}
+.main__div--card {
+    max-width: 700px;
+    border: 2px solid gray;
+    padding: 10px;
+    background-color: #f2f4f6;
+}
