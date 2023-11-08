@@ -17,8 +17,16 @@ let pokemonRepository = (function () {
     function getAll() {
         return pokemonList
     }
-    function add() {
-        pokemonList.push
+        //Bonus work for task 1.5
+    function add(newItem) {
+        let pokeObject = {
+            name: "",
+            type: "",
+            height: 1
+        }
+        if (_.isEqual(newItem, pokeObject)) {
+            pokemonList.push(newItem)
+        }
     }
     function addListItem(pokemon) {
         let pokeList = document.querySelector('.pokemon-list');
@@ -29,6 +37,12 @@ let pokemonRepository = (function () {
         button.classList.add('poke-button');
         listItem.appendChild(button);
         pokeList.appendChild(listItem);    
+            //adding a console.log check when the button is clicked.
+        button.addEventListener('click', showDetails);
+    }
+        //something is not working, I think its the parameter isn't connecting to the pokemonList.name. 
+    function showDetails(pokemon) {
+        console.log(pokemonList.name)
     }
     return {
         getAll: getAll,
@@ -38,7 +52,6 @@ let pokemonRepository = (function () {
 })()
 
 pokemonRepository.getAll().forEach(function(pokemon) {
-    // document.write(pokemon.name + ' is a ' + pokemon.type + ' type pokemon, who is ' + pokemon.height + ' feet tall. <br>' )
     pokemonRepository.addListItem(pokemon);
 })
 

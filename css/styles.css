@@ -20,9 +20,9 @@ header {
     justify-content: space-evenly;
     padding: 20px;
 }
-/* header h1 {
+h1, h2 {
     font-size: medium;
-} */
+}
 .header__img {
     width: 40px;
 }
@@ -50,10 +50,19 @@ header {
 ul {
     list-style-type: none;
 }
+.card__img {
+    width: 80px;
+}
 th {
     background-color: var(--highlight-color);
     color: White;
     margin: 10px;
+    table-layout: fixed;
+    width: 50px;
+}
+td {
+    background-color: white;
+    text-align: center;
 }
 @media all and (max-width: 600px) {
     .main__div {
