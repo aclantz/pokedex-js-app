@@ -32,7 +32,7 @@ let pokemonRepository = (function () {
         let pokeList = document.querySelector('.pokemon-list');
         let listItem = document.createElement('li');
         let button = document.createElement('button');
-    
+
         button.innerText = pokemon.name;
         button.classList.add('poke-button');
         listItem.appendChild(button);
@@ -40,9 +40,9 @@ let pokemonRepository = (function () {
             //adding a console.log check when the button is clicked.
         button.addEventListener('click', showDetails);
     }
-        //something is not working, I think its the parameter isn't connecting to the pokemonList.name. 
+        //something is not working,  
     function showDetails(pokemon) {
-        console.log(pokemonList.name)
+        console.log(pokemon.name)
     }
     return {
         getAll: getAll,
