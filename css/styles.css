@@ -1,4 +1,11 @@
 
+* {
+    box-sizing: border-box;
+}
+:root {
+    --card-color: #f2f4f6;
+    --highlight-color: #519e8a;
+}
 body {
   font-family: 'Noto Sans', sans-serif;
 }
@@ -19,9 +26,37 @@ header {
 .header__img {
     width: 40px;
 }
+.main__div {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-gap: 20px;
+}
 .main__div--card {
     max-width: 700px;
     border: 2px solid gray;
     padding: 10px;
-    background-color: #f2f4f6;
+    background-color: var(--card-color);
+}
+.poke-button {
+    background-color: var(--highlight-color);
+    color: white;
+    border: none;
+    padding: 5px;
+    margin: 4px 2px;
+    display: inline-block;
+    text-align: center;
+    width: 200px;
+}
+ul {
+    list-style-type: none;
+}
+th {
+    background-color: var(--highlight-color);
+    color: White;
+    margin: 10px;
+}
+@media all and (max-width: 600px) {
+    .main__div {
+        grid-template-columns: 1fr;
+    }
 }
