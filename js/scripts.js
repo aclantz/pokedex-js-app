@@ -37,10 +37,11 @@ let pokemonRepository = (function () {
         button.classList.add('poke-button');
         listItem.appendChild(button);
         pokeList.appendChild(listItem);    
-            //adding a console.log check when the button is clicked.
-        button.addEventListener('click', showDetails);
+            //used arrow function to add param to showDetails. Task 1.6
+        button.addEventListener('click', () => {
+            showDetails(pokemon);
+        });
     }
-        //something is not working,  
     function showDetails(pokemon) {
         console.log(pokemon.name)
     }
