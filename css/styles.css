@@ -5,6 +5,7 @@
 :root {
     --card-color: #f2f4f6;
     --highlight-color: #519e8a;
+    --button-color: #141414;
 }
 body {
   font-family: 'Noto Sans', sans-serif;
@@ -37,8 +38,12 @@ h1, h2 {
     padding: 10px;
     background-color: var(--card-color);
 }
+.info--card {
+    height: 700px;
+}
 .poke-button {
     background-color: var(--highlight-color);
+    /* opacity: 0.7; */
     color: white;
     border: none;
     padding: 5px;
@@ -46,15 +51,25 @@ h1, h2 {
     display: inline-block;
     text-align: center;
     width: 200px;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-    border-right: 2px solid rgba(0, 0, 0, 0.3);
+    /* border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+    border-right: 2px solid rgba(0, 0, 0, 0.3); */
     
 }
 .poke-button:focus {
     opacity: 0.9;
+    margin-left: 25px;
+
 }
 ul {
     list-style-type: none;
+}
+/* bonus task 1.7 */
+.loading {
+    text-align: center;
+    font-size: small;
+}
+.hide-loading {
+    display: none;
 }
 .card__img {
     width: 80px;
