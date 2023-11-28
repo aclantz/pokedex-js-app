@@ -23,6 +23,7 @@ let pokemonRepository = (function () {
             showDetails(pokemon);
         });
     }
+
     function showDetails(pokemon) {
         loadDetails(pokemon).then(function () {
             showModal(pokemon);
@@ -75,7 +76,8 @@ let pokemonRepository = (function () {
         if (e.key === 'Escape' && modalContainer.classList.contains('is-visible')) {
             hideModal();
         }
-    })
+    }) 
+
     function loadList() {
       return fetch(apiUrl).then(function (response) {  
         return response.json();
@@ -103,6 +105,7 @@ let pokemonRepository = (function () {
             console.error(e);
         })
     }
+     
     return {
         getAll: getAll,
         add: add,
