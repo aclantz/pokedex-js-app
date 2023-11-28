@@ -15,18 +15,18 @@ main {
     flex-direction: column;
     align-items: center;
 }
-header {
+/* header {
     display: flex;
     width: 100%;
     justify-content: space-evenly;
     padding: 20px;
-}
+} */
 h1, h2 {
     font-size: medium;
 }
-.header__img {
+/* .header__img {
     width: 40px;
-}
+} */
 .main__div {
     display: grid;
     grid-template-columns: 300px 1fr;
@@ -41,7 +41,7 @@ h1, h2 {
 .info--card {
     height: 700px;
 }
-.poke-button {
+/* .poke-button {
     background-color: var(--highlight-color);
     opacity: 0.9;
     color: white;
@@ -51,7 +51,7 @@ h1, h2 {
     display: inline-block;
     text-align: center;
     width: 200px;
-}
+} */
 .poke-button:focus {
     opacity: 1.3;
     margin-left: 15px;
