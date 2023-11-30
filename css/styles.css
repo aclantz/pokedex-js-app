@@ -10,27 +10,22 @@
 body {
   font-family: 'Noto Sans', sans-serif;
 }
-main {
+/* main {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-/* header {
-    display: flex;
-    width: 100%;
-    justify-content: space-evenly;
-    padding: 20px;
 } */
+.bg-light {
+    color: var(--card-color);
+    border-bottom: 2px solid gray;
+}
+.poke-ball {
+    width: 100px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 h1, h2 {
     font-size: medium;
-}
-/* .header__img {
-    width: 40px;
-} */
-.main__div {
-    display: grid;
-    grid-template-columns: 300px 1fr;
-    grid-gap: 20px;
 }
 .main__div--card {
     max-width: 700px;
@@ -41,6 +36,18 @@ h1, h2 {
 .info--card {
     height: 700px;
 }
+/* header {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    padding: 20px;
+} */
+/* .header__img {
+    width: 40px;
+} */
+/* .main__div {
+   width: 300px;
+} */
 /* .poke-button {
     background-color: var(--highlight-color);
     opacity: 0.9;
@@ -52,12 +59,12 @@ h1, h2 {
     text-align: center;
     width: 200px;
 } */
-.poke-button:focus {
+/* .poke-button:focus {
     opacity: 1.3;
     margin-left: 15px;
 
-}
-ul {
+} */
+/* ul {
     list-style-type: none;
 }
 #modal-container {
@@ -81,7 +88,7 @@ ul {
     margin: auto;
     display: inline-block;
     box-sizing: border-box;/*redundant*/
-    background-color: #fff;
+    /* background-color: #fff;
     padding: 15px;
     width: 100%;
     max-width: 500px;
@@ -118,4 +125,4 @@ td {
     .main__div {
         grid-template-columns: 1fr;
     }
-}
+} */ */

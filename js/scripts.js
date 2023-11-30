@@ -46,12 +46,15 @@ let pokemonRepository = (function () {
         console.error(e);
       });
   }
-  
+
   //creates list of pokemon buttons
   function addListItem(pokemon) {
     let pokeList = document.querySelector(".pokemon-list");
     let listItem = document.createElement("li");
     let button = document.createElement("button");
+
+    listItem.classList.add();
+
 
     button.innerText = pokemon.name;
     button.classList.add("poke-button", "btn", "btn-dark"); //classes added for bootstrap configuration
