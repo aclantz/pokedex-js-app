@@ -110,7 +110,7 @@ let pokemonRepository = (function () {
     modalBody.append(imgElement);
     modalBody.append(abilitiesElement);
     modalBody.append(typeElement);
-    $("#exampleModal").modal("toggle"); //added from forum example, jeheald23
+    // $("#exampleModal").modal("toggle"); //added from forum example, jeheald23
   }
 
   return {
