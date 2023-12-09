@@ -57,7 +57,7 @@ let pokemonRepository = (function () {
 
     button.innerText = pokemon.name;
     button.classList.add("poke-button", "btn", "btn-dark"); //classes added for bootstrap configuration
-    listItem.classList.add("list-group-item"); //added for bootstrap configuration
+    listItem.classList.add("list-group-item", "col-sm-3",); //added for bootstrap configuration *** col layout
     button.setAttribute("data-toggle", "modal");
     button.setAttribute("data-target", "#pokemonModal");
 
