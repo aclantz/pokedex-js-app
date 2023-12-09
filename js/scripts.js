@@ -35,6 +35,9 @@ let pokemonRepository = (function () {
     let url = item.detailsUrl;
     return fetch(url)
       .then(function (response) {
+        if (!response.ok) {
+            console.error('network response issue'); //suggested error catch from AI
+        }
         return response.json();
       })
       .then(function (details) {
@@ -43,7 +46,7 @@ let pokemonRepository = (function () {
         item.types = details.types;
       })
       .catch(function (e) {
-        console.error(e);
+        console.error('error fetching or parsing details data');
       });
   }
 
@@ -77,7 +80,7 @@ let pokemonRepository = (function () {
   function showModal(pokemon) {
     let modalBody = $(".modal-body");
     let modalTitle = $(".modal-title");
-    let modalHeader = $(".modal-header");
+    let modalHeader = $(".modal-header");//not used but directed to include in assignment 
 
     //clearing existing content in the modal
     modalTitle.empty();
@@ -108,7 +111,6 @@ let pokemonRepository = (function () {
     modalBody.append(imgElement);
     modalBody.append(abilitiesElement);
     modalBody.append(typeElement);
-    // $("#exampleModal").modal("toggle"); //added from forum example, jeheald23
   }
 
   return {

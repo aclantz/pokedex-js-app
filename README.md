@@ -25,3 +25,11 @@ Web Hosting).
 ● The app should show loading indicators while loading data.
 ● The app should handle errors (such as trying to load data while offline) and show user-friendly
 error messages.
+
+## Reflection
+This project was my first dive into using JavaScript. I knew a lot of what I wanted this app to look and feel like right from the beginning. As my understanding of JS grew I started to understand the lessons this achievement was intended to teach and that my initial ideas at the beginning were good but didn't possess the full scope of what is possible with JS.
+
+Learning functions was a struggle at first, it broadened my capacity to what I could build in such a large way that I was overwhelmed. Now I am feeling confident and even having more ideas of what I would like to see in this app with continued work. Some concepts like an IIFE felt simple and easy, while other concepts like Promises I am still working on fully understanding. I will be curious to look back at this project in a couple months to see how I feel.
+I think one of the biggest lessons I learned in this achievement was a personal one, how to face a question that feels overwhelming and be patient and persistent in finding the answer.
+
+If I could add anything to this project it would be a function to apply classes to the list items dependant on what type each pokemon is. I hope to continue working on this goal and add it later on. 
