@@ -53,8 +53,6 @@ let pokemonRepository = (function () {
     let listItem = document.createElement("li");
     let button = document.createElement("button");
 
-    listItem.classList.add();
-
     button.innerText = pokemon.name;
     button.classList.add("poke-button", "btn", "btn-dark"); //classes added for bootstrap configuration
     listItem.classList.add("list-group-item", "col-sm-3",); //added for bootstrap configuration *** col layout
