@@ -19,6 +19,7 @@ let pokemonRepository = (function () {
       })
       .then(function (json) {
         json.results.forEach(function (item) {
+          console.log(item);
           let pokemon = {
             name: item.name,
             detailsUrl: item.url,
@@ -49,7 +50,7 @@ let pokemonRepository = (function () {
         console.error('error fetching or parsing details data');
       });
   }
-
+console.log(1, 2, 3);
   //creates list of pokemon buttons
   function addListItem(pokemon) {
     let pokeList = document.querySelector(".pokemon-list");
@@ -57,6 +58,10 @@ let pokemonRepository = (function () {
     let button = document.createElement("button");
 
     button.innerText = pokemon.name;
+    console.log(pokemon);
+    if(pokemon.type.includes('grass')) {
+      listItem.classList.add('grass');
+    } 
     button.classList.add("poke-button", "btn", "btn-dark"); //classes added for bootstrap configuration
     listItem.classList.add("list-group-item", "col-sm-3",); //added for bootstrap configuration *** col layout
     button.setAttribute("data-toggle", "modal");
@@ -127,4 +132,13 @@ pokemonRepository.loadList().then(function () {
     pokemonRepository.addListItem(pokemon);
   });
 });
+
+//list color function
+function typeColor() {
+  let listItem = $('.list-group-item');
+
+  if(pokemon.type.includes('grass')) {
+    listItem.classList.add('grass');
+  } 
+}
 
